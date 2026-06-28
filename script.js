@@ -48,3 +48,10 @@ function bagi(){
  let angka2 = Number(document.getElementById('b').value);
  document.getElementById('hasil').innerHTML=(angka1/angka2);
 }
+
+function arraymobil(){
+    const mobil = ['sedan', ' truck', ' ambulance', ' damkar'];
+    mobil[0] = 'jeep';
+    document.getElementById('array_mobil').innerHTML = mobil;
+
+}
