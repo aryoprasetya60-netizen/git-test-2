@@ -13,20 +13,42 @@
         <li>Aryo</li>
         <li>Prasetya</li>
     </ul>
-    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+    <button type="button" onclick="tampiltanggal()">
         Klik untuk menampilkan tanggal
     </button>
     <p id="demo">
-
     </p>
     <br>
-    <button type="button" onclick="gender_pria()">
+    <button type="button" onclick="hide()">
+        Klik untuk menyembunyikan tanggal
+    </button>
+    <br>
+    <button type="button" onclick="gender_pria()" style="padding: 10px;">
         Pria
     </button>
-    <button type="button" onclick="gender_wanita()">
+    <button type="button" onclick="gender_wanita()" style="padding: 10px;">
         Wanita
     </button>
-    <img src="pria.jpg" id="imggender" alt="" style="width: 100px;">
-
+    <br>
+    <img src="pria.jpg" id="imggender" alt="" style="max-width:100px; padding: 10px;">
+    <br>
+    <button type="button" onclick="perbesar_style_img()" style="padding: 10px;">
+        Perbesar
+    </button>
+    <button type="button" onclick="perkecil_style_img()" style="padding: 10px;">
+        Perkecil
+    </button>
+    <br>
+    <div>
+    <input type="number" id="a">
+    <input type="number" id="b">
+    <br>
+    <button type="button" onclick="tambah()" style="padding: 10px;">+</button>
+    <button type="button" onclick="kurang()" style="padding: 10px;">-</button>
+    <button type="button" onclick="kali()" style="padding: 10px;">x</button>
+    <button type="button" onclick="bagi()" style="padding: 10px;">:</button>
+    <p id="hasil">
+    </p>
+    </div>
 </body>
 </html>
